@@ -21,12 +21,6 @@ steps:
   displayName: 'Use Python $(python.version)'
 
 - script: |
-    python -m pip install --upgrade pip
-    pip install -r requirements.txt
+     print("Testing a number")
   displayName: 'Install dependencies'
 
-- script: 
-
-    print("Testing Azure pipeline")
-    pytest
-  displayName: 'pytest'
